@@ -1,0 +1,203 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #b7ff4b;
+    background-color: #0b0c10;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #202122;
+    color: white;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #b7ff4b;
+}
+
+#logo img {
+    height: 50px;
+    width: auto;
+}
+
+main {
+    margin-top: 80px; /* Offset for the fixed header */
+    padding: 2em;
+    text-align: center;
+}
+
+.mu img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.mu img:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    color: rgb(183, 255, 75);
+    font-size: 90px;
+    margin-bottom: 20px;
+}
+
+h2, h3 {
+    color: #b7ff4b;
+    margin-bottom: 10px;
+}
+
+/* Styling for Image Containers */
+.image-container {
+    overflow: hidden; /* Ensures the image doesn't overflow out of the container */
+    display: inline-block;
+    margin-bottom: 20px;
+    position: relative; /* Required for hover effects */
+}
+
+.image-container a {
+    display: block;
+}
+
+.image-container img {
+    transition: transform 0.5s ease; /* Smooth transition for the zoom effect */
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Zoom effect on hover */
+.image-container img:hover {
+    transform: scale(1.1); /* Adjust the scale value as needed for the zoom level */
+}
+
+/* Products Section */
+#products {
+    padding: 2em 0;
+}
+
+.product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adds spacing between the images */
+}
+
+.product {
+    width: 200px;
+    height: auto;
+}
+
+.product img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Contact Form */
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #202122;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#contact-form label {
+    display: block;
+    margin-top: 10px;
+    color: white;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+#contact-form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#contact-form button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #202122;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+button {
+    border-radius: 25px; /* Rounded corners */
+    background-color: rgb(183, 255, 75); /* Nike green */
+    color: #0b0c10; /* Dark background for contrast */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px; /* Adjusted padding for better appearance */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions for hover effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+button:hover {
+    background-color: #a0ff4b; 
+    transform: translateY(-3px); /* Slight lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+button:active {
+    background-color: #8bcf3e;
+    transform: translateY(1px); 
+
+}
